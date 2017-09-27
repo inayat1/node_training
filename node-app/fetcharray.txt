@@ -1,0 +1,8 @@
+[{
+    name: 'inayat',
+    empId: 1234
+},
+{
+    name: 'amit',
+    empId: 2345
+}];

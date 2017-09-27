@@ -1,0 +1,82 @@
+node - REPL
+
+
+Events-
+1) emitter
+2)consumer
+3)channel
+
+
+util package fo inheritence in ES5 in node.
+
+
+common events in nodejs:-
+
+1) data: called while streaming
+2) end: called when streaming is done.
+3) error
+
+
+
+logger middleware- morgan 
+authentication - oAuth
+
+
+Webpack:-
+
+1). bundling
+2). dev process
+3). utilities
+
+
+webpack sections:-
+section1: require
+section2: webpack bundle, loader,plugin configuration
+
+	module.exports = {
+		section1: bundle- entry and output {
+		}
+		section2: loader- task section {
+		}
+		section3: plugin section -utility section {
+		}
+	}
+
+section3 : webpack global config: like dev server config
+
+
+note: entry: ''-single bundule
+	entry: {
+		key: 'value' - key name of the bungle and can be anything and value is name of the file.
+	} -multi bundle.
+	output: {
+		FILENAME: '[name].bundle.js'
+	}
+
+
+note: html-webpack-plugin: this plugin will insert script tag or create html page.
+
+
+SOURCE MAP: for debugging purpose.
+
+
+Webpack server:
+
+1. webpack watch mode: webpack --watch
+2. webpack-dev-server
+	devServer: {
+		contentBase: './dist'
+	}
+3. webpack-dev-middleware.
+
+
+
+CHUNKHASH:-
+
+if one file is not changing then we have to tell webpack that this file is const so donot change the hash number and cache this file.
+filename: '[name].[chunkhash].js'
+
+chunkhash tells the browser to cache this file.
+
+and there is also a plugin in webpack: - commonschunk.
+ 
